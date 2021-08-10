@@ -1,0 +1,56 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: rgba(0, 3, 37, 0.89);
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+}
+.todo {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#listusers {
+    background: red;
+    width: 20vw;
+    height: 99%;
+    border: 2px mediumaquamarine solid;
+    border-radius: 5px;
+}
+.player {
+    border: 1px solid rgba(0, 0, 0, 0.651);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+
+}
+#gridpainel {
+    background: blue;
+    width: 40vw;
+    height: 99%;
+    border: 2px mediumaquamarine solid;
+    border-radius: 5px;
+}
+#highscore {
+    background: green;
+    width: 20vw;
+    height: 99%;
+    border: 2px mediumaquamarine solid;
+    border-radius: 5px;
+}
+.score {
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
