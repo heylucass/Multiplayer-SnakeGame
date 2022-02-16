@@ -1,7 +1,7 @@
 # Multiplayer-SnakeGame
 Real-time SnakeGame
 
-### step-by-step
+### Getting Started
 
 1. Use git clone
 Use git clone (repo link)
@@ -18,6 +18,7 @@ will install all dependencies
 * react: "^17.0.2",
 * react-dom: "^17.0.2",
 * react-scripts: "5.0.0",
-* web-vitals: "^2.1.4"
+* web-vitals: "^2.1.4",
+* styled-components: "^5.3.3",
 ###### all were installed via create react app
 Ex: `npx create-react-app my-app`

@@ -1,5 +1,27 @@
-import DisplayScreen from "./Components/DisplayScreen";
+import styled from 'styled-components';
+import Canvas from './Components/Canvas'
 
+const DivScore = styled.div`
+    width: 20vw;
+    background-color: whitesmoke;
+    height: 100%;
+    `;
+    const DivDisplay = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    `;
+    const DivUser = styled.div`
+    padding: 20px; 
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-family: verdana;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    `
 export default function Home()
 {
     //just for testing
@@ -26,45 +48,21 @@ export default function Home()
     },]
   return (
     <>
-      <div id="displayScreen">
-        <div id="scoreTable">
+      <DivDisplay id="displayScreen">
+        <DivScore id="scoreTable">
             {users.map((objProp) => {
                 return (
-                    <div className="usersContainer" key={objProp.id}>
+                    <DivUser className="usersContainer" key={objProp.id}>
                         <span>
                             <h4>{objProp.username}</h4>
                             <p>{objProp.score}</p>
                         </span>
-                    </div>
+                    </DivUser>
                 )
             })}
-        </div>
-        <DisplayScreen />
-      </div>
-      <style>{`
-        #displayScreen {
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #scoreTable {
-            width: 20vw;
-            background-color: whitesmoke;
-            height: 100%;
-        }
-        .usersContainer {
-            padding: 20px; 
-            border: 1px solid grey;
-            border-radius: 8px;
-            font-family: verdana;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-
-        }
-      `}</style>
+        </DivScore>
+        <Canvas id='canv' width='400' height='400' />
+      </DivDisplay>
     </>
   )
 }
